@@ -1,18 +1,24 @@
-Summary:	SynCE - Python bindings for libwbxml
+# TODO: rename to either synce-pywbxml.spec or python-pywbxml.spec
+Summary:	SynCE - Python bindings for wbxml2
+Summary(pl.UTF-8):	SynCE - wiązania Pythona do biblioteki wbxml2
 Name:		synce-pywbxml
 Version:	0.1
 Release:	0.1
 License:	MIT
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/synce/pywbxml-%{version}.tar.gz
-# Source0-md5:	07f659f41d529d9b89da4a86db1e0ee8
+# Source0-md5:	6a1181b7be09ba69fe6768a0f6156416
 URL:		http://www.synce.org/
 BuildRequires:	libwbxml2-devel >= 0.9.2
-BuildRequires:	python
 BuildRequires:	python-Pyrex
+BuildRequires:	python-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+SynCE - Python bindings for wbxml2.
+
+%description -l pl.UTF-8
+SynCE - wiązania Pythona do biblioteki wbxml2.
 
 %prep
 %setup -q -n pywbxml-%{version}
@@ -35,4 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{py_sitedir}/pywbxml.so
+%attr(755,root,root) %{py_sitedir}/pywbxml.so
