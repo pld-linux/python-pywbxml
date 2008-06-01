@@ -1,7 +1,7 @@
 # TODO: rename to either synce-pywbxml.spec or python-pywbxml.spec
 Summary:	SynCE - Python bindings for wbxml2
 Summary(pl.UTF-8):	SynCE - wiązania Pythona do biblioteki wbxml2
-Name:		python-wbxml
+Name:		python-pywbxml
 Version:	0.1
 Release:	0.1
 License:	MIT
