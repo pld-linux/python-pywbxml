@@ -8,11 +8,11 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/synce/pywbxml-%{version}.tar.gz
 # Source0-md5:	6a1181b7be09ba69fe6768a0f6156416
 URL:		http://www.synce.org/
-BuildRequires:	wbxml2-devel >= 0.9.2
 BuildRequires:	pkgconfig
 BuildRequires:	python-Pyrex
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	rpm-pythonprov
+BuildRequires:	wbxml2-devel >= 0.9.2
 Obsoletes:	synce-pywbxml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
