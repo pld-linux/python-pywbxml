@@ -12,7 +12,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	python-Pyrex
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	rpm-pythonprov
-BuildRequires:	wbxml2-devel >= 0.9.2
+BuildRequires:	libwbxml-devel >= 0.9.2
 Obsoletes:	synce-pywbxml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
